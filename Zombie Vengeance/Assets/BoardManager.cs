@@ -3,8 +3,8 @@ using UnityEngine;
 public class BoardManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs; // Prefabs das peças
-    public int width = 8;
-    public int height = 8;
+    public int width;
+    public int height;
     private Tile[,] tiles;
 
     void Start()
