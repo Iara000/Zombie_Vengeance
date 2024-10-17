@@ -2,12 +2,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
+    Animator animator;
     [SerializeField] private string LevelJogo;
     [SerializeField] private GameObject painelMenuIcinial;
     [SerializeField] private GameObject painelOpções;
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     public void Jogar()
     {
-        SceneManager.LoadScene(LevelJogo);
+        Invoke("LoadScene", 2f);
     }
     public void AbrirOpções()
     {
@@ -18,5 +23,9 @@ public class Menu : MonoBehaviour
     {
         painelMenuIcinial.SetActive(true);
         painelOpções.SetActive(false);
+    }
+    private void LoadScene()
+    {
+        SceneManager.LoadScene(LevelJogo);
     }
 }
