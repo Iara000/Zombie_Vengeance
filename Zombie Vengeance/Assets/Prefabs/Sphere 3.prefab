@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7853703060949572817}
   - component: {fileID: 8917341608144520801}
   - component: {fileID: 5591216317767277161}
-  - component: {fileID: 3781706905339005716}
+  - component: {fileID: 562630681108331323}
   m_Layer: 0
   m_Name: Sphere 3
-  m_TagString: Untagged
+  m_TagString: Dot4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3781706905339005716
+--- !u!114 &562630681108331323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +115,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5408351210222016154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f45fc044b6422f748a52af69f9e40b30, type: 3}
+  m_Script: {fileID: 11500000, guid: 84041bfb796f4b942a752e9a35425130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileType: 3
+  column: 0
+  row: 0
+  previousColumn: 0
+  previousRow: 0
+  targetX: 0
+  targetY: 0
+  isMatched: 0
+  otherDot: {fileID: 0}
+  swipeAngle: 0
+  swipeResist: 1
+  isColorBomb: 0
+  isColumnBomb: 0
+  isRowBomb: 0
+  rowArrow: {fileID: 1775534601444322, guid: fb7a82220b768ee4882146af672b2462, type: 3}
+  columnArrow: {fileID: 1629322208613970, guid: f1519f5552e406548aea20a49afaa120, type: 3}
+  colorBomb: {fileID: 1942758963516802, guid: ff9f30343e63cee4f88f594a7bbeaadc, type: 3}
