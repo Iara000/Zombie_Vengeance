@@ -396,8 +396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 1
-  width: 6
-  height: 4
+  width: 9
+  height: 7
   offSet: 20
   tilePrefab: {fileID: 1170864395725264, guid: 891072906cdccf4478a94a5aa97fa04a, type: 3}
   dots:
@@ -780,7 +780,7 @@ Transform:
   m_GameObject: {fileID: 1860979379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 4, z: -10}
+  m_LocalPosition: {x: 3.5, y: 4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
