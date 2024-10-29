@@ -39,7 +39,6 @@ public class Board : MonoBehaviour
                 {
                     dotToUse = Random.Range(0, dots.Length);
                     maxIterations++;
-                    Debug.Log(maxIterations);
                 }
                 maxIterations = 0;
                 GameObject dot = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity);
