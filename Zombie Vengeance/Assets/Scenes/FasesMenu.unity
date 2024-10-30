@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6abad90f5f1c54a852d146a5097f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: Fase3
+  Level: Fase 3
   myButton: {fileID: 2104760511}
 --- !u!4 &145254851
 Transform:
@@ -837,6 +837,55 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &966861857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966861859}
+  - component: {fileID: 966861858}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &966861858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966861857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82c7167a7fd7914f8577f7c4ac0bba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvlButtons:
+  - {fileID: 1542449644}
+  - {fileID: 213461747}
+  - {fileID: 2104760511}
+  - {fileID: 1502256232}
+--- !u!4 &966861859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966861857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 530.6725, y: 255.72856, z: 2.762276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985193902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6abad90f5f1c54a852d146a5097f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: Fase4
+  Level: Fase 4
   myButton: {fileID: 1502256232}
 --- !u!4 &1048550982
 Transform:
@@ -1681,7 +1730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6abad90f5f1c54a852d146a5097f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: Fase1
+  Level: Fase 1
   myButton: {fileID: 1542449644}
 --- !u!4 &1804334695
 Transform:
@@ -1940,7 +1989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6abad90f5f1c54a852d146a5097f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: Fase2
+  Level: Fase 2
   myButton: {fileID: 213461747}
 --- !u!4 &2126707155
 Transform:
@@ -1969,3 +2018,4 @@ SceneRoots:
   - {fileID: 2126707155}
   - {fileID: 145254851}
   - {fileID: 1048550982}
+  - {fileID: 966861859}

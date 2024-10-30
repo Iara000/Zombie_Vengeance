@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
+
+
     Animator animator;
     [SerializeField] private string LevelJogo;
     [SerializeField] private GameObject painelMenuIcinial;
@@ -28,4 +30,10 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(LevelJogo);
     }
+    public void SairJogo ()
+    {
+        PlayerPrefs.DeleteAll();
+
+    }
+
 }

@@ -507,14 +507,14 @@ MonoBehaviour:
   width: 6
   height: 6
   offSet: 20
-  tilePrefab: {fileID: 1170864395725264, guid: 891072906cdccf4478a94a5aa97fa04a, type: 3}
+  tilePrefab: {fileID: 3296924290793477919, guid: 9d842c74a76fc0f469aa474d4a990370, type: 3}
   dots:
   - {fileID: 6834846641338400759, guid: c4374766c9003d74d96a1b6f6a779b78, type: 3}
   - {fileID: 5408351210222016154, guid: 01b9d729bc7847841a38641f88b28e07, type: 3}
   - {fileID: 5408351210222016154, guid: da7d2c9d457dc9144bc0f602a27c8ce7, type: 3}
   - {fileID: 5408351210222016154, guid: efdd7a582c7d1b341936a37dd7eb9afa, type: 3}
   - {fileID: 5408351210222016154, guid: 42b0ab07b3048c44895ae38487d523de, type: 3}
-  destroyParticle: {fileID: 1498478433188360, guid: 99a2176cb82a5df428f5a1df52ea7cea, type: 3}
+  destroyParticle: {fileID: 8335600992738011408, guid: dca07eed6bfb8ec47b103745c27286d5, type: 3}
   currentDot: {fileID: 0}
 --- !u!4 &599752328
 Transform:
@@ -545,6 +545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 751374479}
+  nextSceneLoad: 0
 --- !u!1 &751374477
 GameObject:
   m_ObjectHideFlags: 0
