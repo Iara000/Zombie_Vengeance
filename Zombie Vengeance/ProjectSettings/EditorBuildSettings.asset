@@ -16,23 +16,11 @@ EditorBuildSettings:
     guid: 0c79580437bd2a347a35f66494a296cd
   - enabled: 1
     path: Assets/Scenes/Fase 2.unity
-    guid: e997dd0f722cbd8409e4812dd23b547c
-  - enabled: 1
-    path: Assets/Scenes/Fase 3.unity
-    guid: c8550b898285b3d4d919c54af0ba7829
-  - enabled: 1
-    path: Assets/Scenes/Fase 4.unity
-    guid: 26ae1976b405f094a9e9331909a669c6
+    guid: 83ac5411f10f61f4091e6e3895d49e80
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: c3fc143f52d3bc14ea028ed48f890ef1
-  - enabled: 0
-    path: Assets/Scenes/Fase2.unity
-    guid: f34aa37491a34aa4f85fa4876a6d7fe8
-  - enabled: 0
-    path: Assets/Scenes/Fase3.unity
-    guid: b1b2165e9bef27e4582237b3ccb1baf3
-  - enabled: 0
-    path: Assets/Scenes/Fase4.unity
-    guid: bd07b948630544f43bc176d47c7b2805
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 4455390eae538bb49b31d127bc03d207
   m_configObjects: {}

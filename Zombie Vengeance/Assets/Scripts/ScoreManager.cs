@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
-    public int score;
+    private int score;
     public TextMeshProUGUI scoreText;
-    public int nextSceneLoad;
-    static int scoreGoal = 2000;
-
+    private int nextSceneLoad;
+    public int scoreGoal;
+    public float totalTime;
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour
     }
     public void AddScore(int matchCount)
     {
-        int points = matchCount * 10;
+        int points = matchCount * 2;
         score += points;
         UpdateScoreText();
     }
@@ -30,28 +30,19 @@ public class ScoreManager : MonoBehaviour
             scoreText.text = "Score: " + score;
         }
     }
-
-    private void Update()
+    void Update()
     {
-        if (score >= scoreGoal)
+        totalTime -= Time.deltaTime;
+        if (totalTime <= 0)
         {
-            if (SceneManager.GetActiveScene().buildIndex == 5)
+            if (score >= scoreGoal)
             {
                 SceneManager.LoadScene("VictoryScreen");
             }
             else
             {
-                score = 0;
-                SceneManager.LoadScene(nextSceneLoad);
-
-                if (nextSceneLoad > PlayerPrefs.GetInt("LevelAt"))
-                {
-                    PlayerPrefs.SetInt("levelAt", nextSceneLoad);
-                }
+                SceneManager.LoadScene("LoseScreen");
             }
-
-            
         }
     }
-
 }
