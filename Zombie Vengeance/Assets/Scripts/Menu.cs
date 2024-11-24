@@ -33,6 +33,7 @@ public class Menu : MonoBehaviour
     public void SairJogo ()
     {
         PlayerPrefs.DeleteAll();
+        Application.Quit();
 
     }
 

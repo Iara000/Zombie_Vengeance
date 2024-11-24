@@ -34,7 +34,7 @@ public class ScoreManager : MonoBehaviour
     {
         if(score >= scoreGoal)
         {
-            if (SceneManager.GetActiveScene().buildIndex == 5)
+            if (SceneManager.GetActiveScene().buildIndex == 5) 
             {
                 SceneManager.LoadScene("VictoryScreen");
             }
