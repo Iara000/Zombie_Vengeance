@@ -32,17 +32,22 @@ public class ScoreManager : MonoBehaviour
     }
     void Update()
     {
-        totalTime -= Time.deltaTime;
-        if (totalTime <= 0)
+        if(score >= scoreGoal)
         {
-            if (score >= scoreGoal)
+            if (SceneManager.GetActiveScene().buildIndex == 5)
             {
                 SceneManager.LoadScene("VictoryScreen");
             }
             else
             {
-                SceneManager.LoadScene("LoseScreen");
+                score = 0;
+                SceneManager.LoadScene(nextSceneLoad);
+                if (nextSceneLoad > PlayerPrefs.GetInt("LevelAt"))
+                {
+                    PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+                }
             }
+
         }
     }
 }

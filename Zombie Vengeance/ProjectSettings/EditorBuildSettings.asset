@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase 2.unity
     guid: 83ac5411f10f61f4091e6e3895d49e80
   - enabled: 1
+    path: Assets/Scenes/Fase 3.unity
+    guid: 2302245b354e54c4bb02f2a2b7d3998c
+  - enabled: 1
+    path: Assets/Scenes/Fase 4.unity
+    guid: f5ab18c0ed1e23848aecdb29442680b9
+  - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: c3fc143f52d3bc14ea028ed48f890ef1
   - enabled: 1

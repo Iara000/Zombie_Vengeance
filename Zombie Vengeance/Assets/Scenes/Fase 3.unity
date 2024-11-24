@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 751374479}
-  scoreGoal: 2000
+  scoreGoal: 4000
   totalTime: 90
 --- !u!1 &751374477
 GameObject:
