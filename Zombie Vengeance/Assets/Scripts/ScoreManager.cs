@@ -6,9 +6,14 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance;
     private int score;
     public TextMeshProUGUI scoreText;
-    private int nextSceneLoad;
     public int scoreGoal;
     public float totalTime;
+    public float attackTime;
+    public Animator Girl;
+    public Animator Zombie;
+    public string girl;
+    public string zombie;
+    private int nextSceneLoad;
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
@@ -22,6 +27,10 @@ public class ScoreManager : MonoBehaviour
         int points = matchCount * 2;
         score += points;
         UpdateScoreText();
+        if (Girl != null)
+        {
+            Girl.SetTrigger(girl);
+        }
     }
     void UpdateScoreText()
     {
@@ -33,6 +42,7 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         totalTime -= Time.deltaTime;
+        attackTime -= Time.deltaTime;
         if (totalTime <= 0)
         {
             if (score >= scoreGoal)
@@ -42,6 +52,13 @@ public class ScoreManager : MonoBehaviour
             else
             {
                 SceneManager.LoadScene("LoseScreen");
+            }
+        }
+        if (attackTime <= 0)
+        {
+            if (Zombie != null)
+            {
+                Zombie.SetTrigger(zombie);
             }
         }
     }
