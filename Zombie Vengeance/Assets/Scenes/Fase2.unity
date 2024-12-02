@@ -320,11 +320,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c6257871bf08f04594f4547e747c144, type: 3}
---- !u!95 &197475137 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 1c6257871bf08f04594f4547e747c144, type: 3}
-  m_PrefabInstance: {fileID: 197475136}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &220950445
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +505,8 @@ MonoBehaviour:
   Fases: {fileID: 0}
   PauseMenu: {fileID: 1424081598}
   Hud: {fileID: 254988015}
+  Creditos: {fileID: 0}
+  Sobre: {fileID: 0}
 --- !u!1 &314165294
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,11 +952,6 @@ MonoBehaviour:
   scoreText: {fileID: 751374479}
   scoreGoal: 6000
   totalTime: 80
-  attackTime: 15
-  Girl: {fileID: 1037168937}
-  Zombie: {fileID: 197475137}
-  girl: Victory
-  zombie: 
 --- !u!114 &599752330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1245,11 +1237,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879328748}
   m_CullTransparentMesh: 1
---- !u!95 &1037168937 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 2269614ef74d3c94eaa84c404f9f8f27, type: 3}
-  m_PrefabInstance: {fileID: 723163035}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106048003
 GameObject:
   m_ObjectHideFlags: 0
